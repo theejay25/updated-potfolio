@@ -6,7 +6,7 @@ export const site = {
   email: "hello@example.com",
   socials: [
     { label: "GitHub", href: "https://github.com/theejay25" },
-    { label: "LinkedIn", href: "linkedin.com/in/jude-okocha-162958327" },
+    { label: "LinkedIn", href: "https://linkedin.com/in/jude-okocha-162958327" },
     { label: "Twitter", href: "https://youtube.com/@your-channel" },
   ],
 };
