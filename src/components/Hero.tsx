@@ -19,16 +19,16 @@ export default function Hero() {
   return (
     <section id="home" className="flex min-h-screen items-center px-6 pb-20 pt-32">
       <div className="mx-auto grid w-full max-w-6xl items-center gap-14 lg:grid-cols-[1.15fr_1fr]">
-        <div>
+        <div className="reveal min-w-0 text-center lg:text-left">
           {/* font-display */}
           <h1 className=" text-5xl font-extrabold leading-[1.02] tracking-tight sm:text-6xl lg:text-7xl">
             I&apos;m {site.name}. I write smart contracts and build Web Apps.
           </h1>
-          <p className="mt-6 max-w-xl text-lg leading-relaxed text-muted">
+          <p className="mx-auto mt-6 max-w-xl text-lg leading-relaxed text-muted lg:mx-0">
             Blockchain developer in the making and full-time curious. I build with Solidity, Foundry and
             Next.js.
           </p>
-          <div className="mt-9 flex flex-wrap gap-3">
+          <div className="mt-9 flex flex-wrap justify-center gap-3 lg:justify-start">
             <Link
               href="/#projects"
               className="rounded-full bg-accent px-6 py-3 font-medium text-white shadow-[0_10px_24px_-8px_rgb(var(--accent))] transition hover:brightness-110"
@@ -44,7 +44,7 @@ export default function Hero() {
           </div>
         </div>
 
-        <div className="relative">
+        <div className="reveal relative min-w-0">
           <div className="overflow-hidden rounded-2xl border border-line bg-surface shadow-card">
             <div className="flex items-center gap-1.5 border-b border-line px-4 py-3">
               <span className="h-3 w-3 rounded-full bg-[#ff5f57]" />

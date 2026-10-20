@@ -77,6 +77,14 @@
   --blob-c: 200 70 180 / 0.16;
 }
 
+/* Stops phone browsers (Chrome/Samsung "dark mode for sites") from darkening the light theme. */
+:root {
+  color-scheme: only light;
+}
+.dark {
+  color-scheme: dark;
+}
+
 html {
   scroll-behavior: smooth;
   scroll-padding-top: 6rem;
@@ -131,7 +139,30 @@ body {
   animation-play-state: paused;
 }
 
+/* ---------- Scroll reveal ----------
+   Rises from below while growing and fading in; shrinks, drifts up and fades out as it leaves. */
+@keyframes reveal-scroll {
+  0% { opacity: 0; transform: translateY(56px) scale(0.94); }
+  22%, 78% { opacity: 1; transform: none; }
+  100% { opacity: 0; transform: translateY(-56px) scale(0.94); }
+}
+@supports (animation-timeline: view()) {
+  .reveal {
+    animation: reveal-scroll linear both;
+    animation-timeline: view();
+    animation-range: cover 0% cover 100%;
+  }
+}
+/* Fallback for browsers without scroll-driven animations (e.g. Firefox): a simple fade-in. */
+@keyframes reveal-in {
+  from { opacity: 0; transform: translateY(32px) scale(0.97); }
+  to { opacity: 1; transform: none; }
+}
+.reveal-ready:not(.in) { opacity: 0; }
+.reveal-ready.in { animation: reveal-in 0.7s ease both; }
+
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
   .marquee-track, .blob { animation: none !important; }
+  .reveal, .reveal-ready, .reveal-ready.in { animation: none !important; opacity: 1 !important; transform: none !important; }
 }

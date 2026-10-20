@@ -5,7 +5,7 @@ export default function ProjectCard({ project }: { project: Project }) {
   const [from, to] = project.cover;
 
   return (
-    <article className="group flex flex-col overflow-hidden rounded-3xl border border-line bg-surface shadow-card transition duration-300 hover:-translate-y-1.5 hover:shadow-card-hover">
+    <article className="reveal group flex flex-col overflow-hidden rounded-3xl border border-line bg-surface shadow-card transition duration-300 hover:-translate-y-1.5 hover:shadow-card-hover">
       <div
         className="flex h-44 items-end p-5"
         style={{ backgroundImage: `linear-gradient(135deg, ${from}, ${to})` }}
