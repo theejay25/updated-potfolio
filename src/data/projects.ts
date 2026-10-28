@@ -44,20 +44,22 @@ export const projects: Project[] = [
     cover: ["#f472b6", "#8b5cf6"],
   },
   {
-    slug: "creator-dashboard",
-    title: "Creator Dashboard",
-    summary: "Channel analytics in one place: views, retention, and upload planning.",
+    slug: "teaching-hospital-portal",
+    title: "Teaching Hospital Portal",
+    summary:
+      "A website for Godfrey Okoye Teaching Hospital.",
     description:
-      "Placeholder: a dashboard built for tracking a YouTube channel's growth. Replace this text with what you built, what data it uses, and what you learned.",
+      "I built this portal for my university as a project for its teaching hospital. It gives the public one place to find out about the hospital: who they are, what they do and how to reach them. It also lets people apply for the hospital's training programmes, such as the Internship training, without going to the office in person. Applicants pick a programme, fill in a sign-up form and submit it online, and the hospital gets their details in one place.",
     highlights: [
-      "Custom charts with no chart library",
-      "Upload calendar with status tracking",
-      "Dark and light themes",
+      "Information pages about the teaching hospital",
+      "A list of available programmes, including the IT internship training",
+      "An online sign-up form for each programme",
+      "Works on phones as well as computers",
     ],
-    tech: ["Next.js", "TypeScript", "Tailwind CSS"],
-    live: "https://example.com/creator-dashboard",
-    repo: "https://github.com/your-username/creator-dashboard",
-    cover: ["#22d3ee", "#6366f1"],
+    tech: ["Next.js", "[Node.js]", "[Mongo Db]", "[Express]"],
+    live: "https://my-gouth.vercel.app/",
+    repo: "https://github.com/theejay25/GOU-th-full-site/tree/main",
+    cover: ["#34d399", "#3b82f6"],
   },
   {
     slug: "dao-voting",
