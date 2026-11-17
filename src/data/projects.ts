@@ -10,6 +10,8 @@ export type Project = {
   cover: [string, string]; // gradient colors for the card cover
 };
 
+//authors comment
+
 export const projects: Project[] = [
   {
     slug: "token-vault",
