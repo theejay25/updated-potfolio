@@ -56,7 +56,7 @@ export const projects: Project[] = [
       "An online sign-up form for each programme",
       "Works on phones as well as computers",
     ],
-    tech: ["Next.js", "[Node.js]", "[Mongo Db]", "[Express]"],
+    tech: ["Next.js", "Node.js", "Mongo Db", "Express"],
     live: "https://my-gouth.vercel.app/",
     repo: "https://github.com/theejay25/GOU-th-full-site/tree/main",
     cover: ["#34d399", "#3b82f6"],
