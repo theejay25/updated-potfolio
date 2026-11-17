@@ -64,20 +64,22 @@ export const projects: Project[] = [
     cover: ["#34d399", "#3b82f6"],
   },
   {
-    slug: "Crowdfunding",
-    title: "Crowdfunding Contract",
-    summary: "On-chain crowdfunding campaigns with goals and funding deadlines",
+    slug: "crowdfunding-dapp",
+    title: "Crowdfunding dApp",
+    summary:
+      "A crowdfunding platform on the Sepolia testnet where anyone can launch a campaign, fund it, and get refunds if the goal is missed.",
     description:
-      "Placeholder: explain the governance design here. Proposals are created on-chain, votes are weighted by token balance at a snapshot, and results are shown live.",
+      "Anyone can create a campaign through a factory contract by setting a goal and a deadline of up to a year. Each campaign is its own smart contract with its own funds, owned by the person who created it. Donors can deposit until the deadline. If the goal is reached, the owner withdraws the funds and deposits close. If the goal is missed, every donor can claim a full refund after the deadline. The contracts are written in Solidity with an interface, an inheritance structure and a factory, and protected with a reentrancy guard. They were tested with Foundry, including fuzz tests and a simulated reentrancy attack. The front end is a Next.js app with a warning page, a list of all campaigns beside the connected wallet's own campaigns, and a page for each campaign. It runs on a test network and is unaudited, so it holds no real money.",
     highlights: [
-      "Create campaign",
-      "Reach Campaign goals",
-      "Keep track of funding along the way",
+      "Factory contract that deploys an independent campaign for each creator",
+      "Pull-based refunds when a goal is missed, with balances zeroed before ETH is sent",
+      "Foundry tests with fuzzing and a reentrancy attack test",
+      "Wallet connection and transactions with wagmi and viem, with readable error messages",
     ],
-    tech: ["Solidity", "Foundry", "Nextjs"],
-    live: "https://crowdfunding-rkhw10ql9-jude-s-projects-1460c791.vercel.app/",
-    repo: "https://crowdfunding-gamma-nine.vercel.app/",
-    cover: ["#a78bfa", "#f59e0b"],
+    tech: ["Solidity", "Foundry", "Next.js", "TypeScript", "Tailwind CSS", "wagmi", "viem"],
+    live: "https://[your-vercel-production-domain]",
+    repo: "https://github.com/theejay25/[repo-name]",
+    cover: ["#6c4dff", "#16213e"],
   },
   {
     slug: "landing-page-kit",
