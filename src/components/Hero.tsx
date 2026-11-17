@@ -36,7 +36,7 @@ export default function Hero() {
               View projects
             </Link>
             <a
-              href={`mailto:${site.email}`}
+              href={`mailto:${'judeokocha06@gmail.com'}`}
               className="rounded-full border border-line bg-surface px-6 py-3 font-medium shadow-card transition hover:shadow-card-hover"
             >
               Get in touch

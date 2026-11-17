@@ -62,19 +62,19 @@ export const projects: Project[] = [
     cover: ["#34d399", "#3b82f6"],
   },
   {
-    slug: "dao-voting",
-    title: "DAO Voting",
-    summary: "On-chain proposals and token-weighted voting with a clean results view.",
+    slug: "Crowdfunding",
+    title: "Crowdfunding Contract",
+    summary: "On-chain crowdfunding campaigns with goals and funding deadlines",
     description:
       "Placeholder: explain the governance design here. Proposals are created on-chain, votes are weighted by token balance at a snapshot, and results are shown live.",
     highlights: [
-      "Snapshot-based vote weighting",
-      "Proposal lifecycle: draft, active, executed",
-      "Foundry invariant tests",
+      "Create campaign",
+      "Reach Campaign goals",
+      "Keep track of funding along the way",
     ],
-    tech: ["Solidity", "Foundry", "Blockchain", "React"],
-    live: "https://example.com/dao-voting",
-    repo: "https://github.com/your-username/dao-voting",
+    tech: ["Solidity", "Foundry", "Forge", "Nextjs"],
+    live: "https://crowdfunding-rkhw10ql9-jude-s-projects-1460c791.vercel.app/",
+    repo: "https://github.com/theejay25/Crowdfunding/blob/main/contract/src/Crowdfunding.sol",
     cover: ["#a78bfa", "#f59e0b"],
   },
   {
