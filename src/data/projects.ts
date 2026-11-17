@@ -72,7 +72,7 @@ export const projects: Project[] = [
       "Reach Campaign goals",
       "Keep track of funding along the way",
     ],
-    tech: ["Solidity", "Foundry", "Forge", "Nextjs"],
+    tech: ["Solidity", "Foundry", "Nextjs"],
     live: "https://crowdfunding-rkhw10ql9-jude-s-projects-1460c791.vercel.app/",
     repo: "https://github.com/theejay25/Crowdfunding/blob/main/contract/src/Crowdfunding.sol",
     cover: ["#a78bfa", "#f59e0b"],
