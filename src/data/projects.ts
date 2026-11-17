@@ -76,7 +76,7 @@ export const projects: Project[] = [
     ],
     tech: ["Solidity", "Foundry", "Nextjs"],
     live: "https://crowdfunding-rkhw10ql9-jude-s-projects-1460c791.vercel.app/",
-    repo: "https://github.com/theejay25/Crowdfunding/blob/main/contract/src/Crowdfunding.sol",
+    repo: "https://crowdfunding-gamma-nine.vercel.app/",
     cover: ["#a78bfa", "#f59e0b"],
   },
   {
