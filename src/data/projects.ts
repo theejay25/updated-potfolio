@@ -77,7 +77,7 @@ export const projects: Project[] = [
       "Wallet connection and transactions with wagmi and viem, with readable error messages",
     ],
     tech: ["Solidity", "Foundry", "Next.js", "TypeScript", "Tailwind CSS", "wagmi", "viem"],
-    live: "crowdfunding-gamma-nine.vercel.app/",
+    live: "https://crowdfunding-gamma-nine.vercel.app/",
     repo: "https://github.com/theejay25/Crowdfunding/blob/main/contract/src/Crowdfunding.sol",
     cover: ["#6c4dff", "#16213e"],
   },
